@@ -5,7 +5,6 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Directory
 %define	pnam	Scratch
-# Source0-md5:	3383a99139c3c8d6fe8bb5fcffb2dd84
 Summary:	Directory::Scratch - Easy-to-use self-cleaning scratch space
 #Summary(pl):
 Name:		perl-Directory-Scratch
@@ -15,7 +14,8 @@ License:	Perl
 Group:		Development/Languages/Perl
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
-Source0:	http://www.cpan.org/modules/by-modules/Directory/Directory-Scratch-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Directory/Directory-Scratch-%{version}.tar.gz
+# Source0-md5:	3383a99139c3c8d6fe8bb5fcffb2dd84
 %if %{with tests}
 BuildRequires:	perl(File::Slurp) >= 9999.12
 # version is just because it failed on 0.12 here, even if makefile dont specify minimum version
