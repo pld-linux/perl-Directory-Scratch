@@ -6,28 +6,30 @@
 %define	pdir	Directory
 %define	pnam	Scratch
 Summary:	Directory::Scratch - Easy-to-use self-cleaning scratch space
-#Summary(pl):
+Summary(pl.UTF-8):	Directory::Scratch - łatwa w użyciu samoczyszcząca przestrzeń robocza
 Name:		perl-Directory-Scratch
 Version:	0.13
 Release:	1
 License:	Perl
 Group:		Development/Languages/Perl
-BuildRequires:	perl-devel >= 1:5.8.0
-BuildRequires:	rpm-perlprov >= 4.1-13
 Source0:	http://www.cpan.org/modules/by-module/Directory/Directory-Scratch-%{version}.tar.gz
 # Source0-md5:	3383a99139c3c8d6fe8bb5fcffb2dd84
+URL:		http://search.cpan.org/dist/Directory-Scratch/
+BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
-BuildRequires:	perl(File::Slurp) >= 9999.12
-# version is just because it failed on 0.12 here, even if makefile dont specify minimum version
-BuildRequires:	perl(Path::Class) > 0.12
+BuildRequires:	perl-File-Slurp >= 9999.12
+# version is just because it failed on 0.12 here, even if makefile doesn't specify minimum version
+BuildRequires:	perl-Path-Class > 0.12
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
+Directory::Scratch - Easy-to-use self-cleaning scratch space.
 
-
-# %description -l pl # TODO
+%description -l pl.UTF-8
+Directory::Scratch - łatwa w użyciu samoczyszcząca przestrzeń robocza.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -48,7 +50,7 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT
 
 install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
-cp -a examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}/
+cp -a examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
