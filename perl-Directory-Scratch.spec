@@ -8,12 +8,12 @@
 Summary:	Directory::Scratch - Easy-to-use self-cleaning scratch space
 Summary(pl.UTF-8):	Directory::Scratch - łatwa w użyciu samoczyszcząca przestrzeń robocza
 Name:		perl-Directory-Scratch
-Version:	0.13
+Version:	0.14
 Release:	1
 License:	Perl
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Directory/Directory-Scratch-%{version}.tar.gz
-# Source0-md5:	3383a99139c3c8d6fe8bb5fcffb2dd84
+# Source0-md5:	3e759c3a5ff8c678725aad99e80a5c14
 URL:		http://search.cpan.org/dist/Directory-Scratch/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
