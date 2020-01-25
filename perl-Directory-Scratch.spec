@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define	pdir	Directory
 %define	pnam	Scratch
 Summary:	Directory::Scratch - Easy-to-use self-cleaning scratch space
