@@ -8,7 +8,7 @@ Summary:	Directory::Scratch - Easy-to-use self-cleaning scratch space
 Summary(pl.UTF-8):	Directory::Scratch - łatwa w użyciu samoczyszcząca przestrzeń robocza
 Name:		perl-Directory-Scratch
 Version:	0.18
-Release:	1
+Release:	2
 # same as perl 5
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
